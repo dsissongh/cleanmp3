@@ -28,5 +28,10 @@ class datao(object):
 			self.new = 1
 			#print("non")
 
+	def createintentorytables(self):
+		sql = "create table inventory ('ID' integer, 'name' string, \
+			'location' string)";
+			
+
 	def close(self):
 		self.connection.close()

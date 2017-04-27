@@ -19,6 +19,10 @@ traverse(test)
 dbcon = datao()
 print(dbcon.new)
 
+if dbcon.new == 1:
+	dbcon.createintentorytables()
+	dbcon.new = 0
+
 #conn.commit()
 dbcon.close()
 
